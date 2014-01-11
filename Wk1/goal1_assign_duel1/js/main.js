@@ -25,4 +25,17 @@
     //rounds
     var round = 1;
 
+    function fight(){
+        console.log("in the fight function");
+
+    };
+
+    function winnerCheck(){
+        //code will go here
+    };
+
+    //The program starts here
+    console.log('programs starts');
+    fight();
+
 })();
