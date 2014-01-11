@@ -28,6 +28,9 @@
     function fight(){
         console.log("in the fight function");
 
+        for(var i=0; i < 10; i++){
+            console.log(i);
+        };
     };
 
     function winnerCheck(){
