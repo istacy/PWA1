@@ -241,7 +241,14 @@ console.log('------ MORE Numbers ----------');
 
 console.log('------ MORE Booleans ----------');
 
+    var num = 9 * 'k';
+    console.log(num);
 
+    if(num){
+        console.log("It's True the value is: ", num);
+    }else{
+        console.log("It's False, the value is: ", num);
+    }
 	
 /*
 	===============================================
