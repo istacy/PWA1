@@ -265,34 +265,47 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
 // indexOf()
 //Returns the first (least) index of an element within the array equal
 //to the specified value, or -1 if none is found.
-
+    console.log(arr2.indexOf('c'));
 
 // join()
 // Joins all elements of an array into a string.
-
+    console.log(arr2.join(','));
 
 // pop()
 // Removes the last element from an array and returns that element
 // shift() removes the first element from an array.
-
+    var element = arr1.pop();
+    console.log(element);
+    console.log(arr1);
 
 // push()
 // Adds one or more elements to the end of an array and returns the new
 //   length of the array
 // unshift() - Adds one or more elements to the front of an array.
+    arr2.push('f');
+    console.log(arr2);
 
+    arr2.unshift('a');
+    console.log(arr2);
 
 // reverse()
 // Reverses the order of the elements of an array
-
+    console.log(arr1.reverse());
 
 // splice()
 // Adds and/or removes elements from an array.
-
+    console.log(arr1);
+    console.log(arr1.splice(4,2)); //NOTE the array was reversed above
+    console.log(arr1);
 
 // forEach()
 // Calls a function for each element in the array.
-
+    console.log(arr1);
+    arr1.forEach(function(element, index, array){
+        console.log('element', element);
+        console.log('index', index);
+        console.log('array', array);
+    });
 
 
 
@@ -317,18 +330,63 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
     var secondHalfYr = ["Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
     var combined;
 
+//Step1
+    var combined = firstQtr.concat(secondQtr);
+//Step2
+    console.log("Concat 2 arrays: ", combined);
+
+//Step3
+    var combined = firstQtr.concat(secondQtr, secondHalfYr);
+//Step4
+    console.log("Concat 3 arrays: ", combined);
+
+//Step5
+    console.log("Joined arrays", combined.join());
+
+//Step6
+    console.log("Took out - ", combined.pop());
+    console.log("Show Array: ", combined);
+
+//Step7 - go to index 2 and slice off 2 through 4 - sep and oct
+    var results = secondHalfYr.slice(2,4);
+    console.log("slice: ", results);
+
+
+
 
 /*
 	===============================================
 	MORE:  Operators (typeof())
 	-----------------------------------------------
 	
-	How to test for a variable's existence (typeof)	
+	How to test for a variables existence (typeof)
 */
 
 console.log('------ MORE Operators - typeof() ----------');
 
+    console.log(typeof 5);
+    console.log(typeof "Hi");
 
+    var str1 = "hello";
+    console.log(typeof str1);
+
+    console.log(typeof true);
+
+    console.log(typeof function(){});
+
+    console.log(typeof obj1);
+
+    console.log(typeof [1, 2, 3, 4, 5]);
+
+    console.log(typeof missingVariable);
+
+    console.log(typeof myString ==='undefined');
+
+    if (typeof myString === 'undefined'){
+        console.log("myString is undefined");
+    }else{
+        console.log("myString is: ", myString)
+    };
 /*
 	===============================================
 	MORE:  Conditionals (switch())
@@ -352,6 +410,9 @@ console.log('------ MORE Operators - typeof() ----------');
 */
 
 console.log('------ MORE Conditionals - Switch ----------');
+
+
+
 
 /*******************************************
  STUDENT ACTIVITY 6:
