@@ -411,7 +411,30 @@ console.log('------ MORE Operators - typeof() ----------');
 
 console.log('------ MORE Conditionals - Switch ----------');
 
+    //var fruit = "Oranges";
+    //var fruit = "chicken";
+    var fruit = "Mangoes";
 
+    switch(fruit){
+        case "Oranges":
+            console.log("Oranges are $0.59 a pound.");
+            break;
+        case "Apples":
+            console.log("Apples are $0.32 a pound.");
+            break;
+        case "Bananas":
+            console.log("Bananas are $0.48 a pound.");
+            break;
+        case "Cherries":
+            console.log("Cherries are $3.00 a pound.");
+            break;
+        case "Mangoes":
+        case "Papayas":
+            console.log("Mangoes and Papayas are $2.79 a pound.");
+            break;
+        default:
+            console.log("Sorry we are out of " + fruit + ".");
+    };
 
 
 /*******************************************
@@ -424,6 +447,20 @@ console.log('------ MORE Conditionals - Switch ----------');
 			if no age then console.log "No answer"
 ********************************************/
 
+    //var age = 28;
+    var age = 18;
+
+    switch (age){
+        case 13:
+            console.log("child");
+            break;
+        case 18:
+            console.log("adult");
+            break;
+        default:
+            console.log("No Answer");
+            break;
+    }
 
 
 /*
@@ -438,6 +475,13 @@ console.log('------ MORE Conditionals - Switch ----------');
 */
 
 console.log('------ MORE Functions ----------');
+
+    var bondsCars = function(){
+        return ['ferrari', 'lambo', 'vwBug'];
+    };
+
+    var cars = bondsCars(); // will return the array of values
+    console.log('James Bond cars,', cars);
 
 
 	/* 
@@ -455,6 +499,11 @@ console.log('------ MORE Functions ----------');
 			self function - combining the 2 statement above
 				var fn = (function(){})();	
 	*/	
+
+    (function(){
+
+    })();
+
 
 
 /*
@@ -486,7 +535,7 @@ console.log('------ MORE Functions ----------');
 				//code goes here
 			}			
 */
-console.log('------ While / Loop ----------');
+
 
 	
 /*
