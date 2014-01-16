@@ -115,14 +115,14 @@ JS Practice
     //Character count
     var ipsum = "this is test text that is being used as input to a function"
     myString = String(ipsum);
-    console.log('Changed to a string: ', typeof myString, myString);
+    console.log('Test char count: ', myString.length);
 
     //PUT FUNCTION HERE
     function charCount(ipsum) {
         var strCount = myString.length;
         return strCount;
     }
-    
+
     console.log(charCount(ipsum));
 
     //--------------------------------------------------------
