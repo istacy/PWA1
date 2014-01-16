@@ -79,11 +79,11 @@ JS Practice
      //console.log(fullName);
 
 
-
     function fullName(firstname, lastname){
         var firstname ='James ';
         var lastname = 'Bond';
         var name = firstname.concat(lastname);
+        return name;
     }
 
     console.log(fullName('James', 'Bond'));
@@ -96,8 +96,6 @@ JS Practice
         function wordCount(ipsum){
 
         }
-
-
 
     console.log(wordCount(ipsum));
 
