@@ -95,28 +95,34 @@ JS Practice
     myString = String(ipsum);
     console.log('Changed to a string: ', typeof myString, myString);
 
-//        //PUT FUNCTION HERE
-//        function wordCount(ipsum){
-//            var count = 0;
-//            for (int 0 = 1; i <= ipsum.length; i++) {
-//                if (ipsum.charAt(i) == " ") {
-//                    count ++;
-//                }
-//            }
-//            return count + 1;
-//        }
-//
-//
-//    console.log(wordCount(ipsum));
+        //PUT FUNCTION HERE
+        function wordCount(ipsum){
+            var count = 0;
+            for (var i = 0; i < ipsum.length; i++) {
+                if (ipsum.charAt(i) == " ") {
+                    count ++;
+                }
+            }
+            return count + 1;
+        }
+
+
+    console.log(wordCount(ipsum));
 
     //--------------------------------------------------------
     console.log("4. sentence char count");
+
     //Character count
-    //myStr = 'this is test text that is being used as input to a function';
-    //console.log(myStr.length);
-        //PUT FUNCTION HERE
+    var ipsum = "this is test text that is being used as input to a function"
+    myString = String(ipsum);
+    console.log('Changed to a string: ', typeof myString, myString);
 
-
+    //PUT FUNCTION HERE
+    function charCount(ipsum) {
+        var strCount = myString.length;
+        return strCount;
+    }
+    
     console.log(charCount(ipsum));
 
     //--------------------------------------------------------
