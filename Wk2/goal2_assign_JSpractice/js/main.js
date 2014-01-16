@@ -152,7 +152,19 @@ JS Practice
     //--------------------------------------------------------
     console.log("6. find number and create an array of even or odd numbers");
 
+
+    function isEven(value){
+        if (value%2 == 0)
+            return true;
+        else
+            return false;
+    }
+
         //PUT FUNCTION HERE
+
+    function findNum(){
+
+    }
 
     console.log(findNum([31,22,4,67,83,6,5,4]));
     console.log(findNum([31,22,4,67,83,6,5,4], false));
