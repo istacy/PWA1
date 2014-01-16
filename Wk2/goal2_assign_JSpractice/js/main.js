@@ -78,10 +78,14 @@ JS Practice
      //var fullName = name[0].concat(name[1]);
      //console.log(fullName);
 
-    function fullName(){
 
 
+    function fullName(firstname, lastname){
+        var firstname ='James ';
+        var lastname = 'Bond';
+        var name = firstname.concat(lastname);
     }
+
     console.log(fullName('James', 'Bond'));
 
     //--------------------------------------------------------
