@@ -90,14 +90,24 @@ JS Practice
 
     //--------------------------------------------------------
     console.log("3. word count");
+
     var ipsum = "this is test text that is being used as input to a function"
+    myString = String(ipsum);
+    console.log('Changed to a string: ', typeof myString, myString);
 
-        //PUT FUNCTION HERE
-        function wordCount(ipsum){
-
-        }
-
-    console.log(wordCount(ipsum));
+//        //PUT FUNCTION HERE
+//        function wordCount(ipsum){
+//            var count = 0;
+//            for (int 0 = 1; i <= ipsum.length; i++) {
+//                if (ipsum.charAt(i) == " ") {
+//                    count ++;
+//                }
+//            }
+//            return count + 1;
+//        }
+//
+//
+//    console.log(wordCount(ipsum));
 
     //--------------------------------------------------------
     console.log("4. sentence char count");
