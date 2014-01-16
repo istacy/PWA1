@@ -128,10 +128,10 @@ JS Practice
     //--------------------------------------------------------
     console.log("5. how many vowels in a word");
 
+    console.log('Test for counting vowels');
     var word = 'JavaScript';
     var syl = 0;
 
-    
     for(var i=0; i<word.length; i++) {
         if('aouie'.search(word[i]) > -1){
             syl++;
@@ -139,11 +139,13 @@ JS Practice
     }
 
     console.log(syl+" vowels");
+
         //PUT FUNCTION HERE
 
-
-
-
+    function vowelsInWord(str) {
+        var vowels = str.match(/[aeiou]/gi);
+        return vowels && vowels.length;
+    }
 
     console.log(vowelsInWord('JavaScript'));
 
