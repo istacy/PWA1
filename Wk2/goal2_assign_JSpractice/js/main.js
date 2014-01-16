@@ -112,16 +112,16 @@ JS Practice
     //--------------------------------------------------------
     console.log("4. sentence char count");
 
-    //Character count
-    var ipsum = "this is test text that is being used as input to a function"
-    myString = String(ipsum);
-    console.log('Test char count: ', myString.length);
+        //Character count
+        var ipsum = "this is test text that is being used as input to a function"
+        myString = String(ipsum);
+        console.log('Test char count: ', myString.length);
 
-    //PUT FUNCTION HERE
-    function charCount(ipsum) {
-        var strCount = myString.length;
-        return strCount;
-    }
+        //PUT FUNCTION HERE
+        function charCount(ipsum) {
+            var strCount = myString.length;
+            return strCount;
+        }
 
     console.log(charCount(ipsum));
 
@@ -129,6 +129,22 @@ JS Practice
     console.log("5. how many vowels in a word");
 
         //PUT FUNCTION HERE
+        var word = 'JavaScript';
+
+        function vowelsInWord(word){
+            var vowel = ("|"+word+"|").split(/[aeiou]/i).length-1;
+            for (var i = 0; i < word.length - 1; i++) {
+                for (var i2 = 0; i2 < word[i].length - 1; i2++) {
+                    if ('aouie'.search(word[i][i2]) > -1) {
+                        vowel++;
+                        return vowel;
+                    }
+                }
+            }
+        }
+
+
+
 
     console.log(vowelsInWord('JavaScript'));
 
