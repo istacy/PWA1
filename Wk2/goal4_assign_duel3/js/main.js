@@ -21,6 +21,7 @@
         //console.log("in the fight function");
 
 //        alert(player1[0]+":"+player1[2]+" *START* "+player2[0]+":"+player2[2]);
+        document.getElementById('scores');
 
         for (var i = 0; i < 10; i++){
 
@@ -69,12 +70,12 @@
 
         //code will go here
         var result="no winner";
-        if (player1[2]<1 && player2[2]<1){
+        if (player1.health<1 && player2.health<1){
             result = "You Both Die";
-        } else if(player1[2]<1){
-            result =player[0]+" WINS!!!"
-        } else if (player2[2]<1){
-            result = player1[0]+" WINS!!!"
+        } else if(player1.health<1){
+            result =player1.name +" WINS!!!"
+        } else if (player2.health<1){
+            result = player1.name+" WINS!!!"
         };
         return result;
     };

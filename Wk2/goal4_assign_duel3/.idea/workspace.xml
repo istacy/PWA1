@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="57" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="630">
+            <state line="33" column="57" selection-start="556" selection-end="556" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="14" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.31008902" vertical-offset="721" max-vertical-offset="1395">
+            <state line="77" column="44" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.6661721" vertical-offset="736" max-vertical-offset="1410">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -245,14 +245,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="57" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="630">
+        <state line="33" column="57" selection-start="556" selection-end="556" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="14" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.31008902" vertical-offset="721" max-vertical-offset="1395">
+        <state line="77" column="44" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.6661721" vertical-offset="736" max-vertical-offset="1410">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
