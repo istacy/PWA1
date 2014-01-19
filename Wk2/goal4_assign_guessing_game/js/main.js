@@ -7,7 +7,31 @@
  * GUESSING GAME
  */
 
-
+//Game variables
+//(function (){
+//
+//    var x = Math.floor(Math.random() * 10) + 1;
+//    var turns = 3;
+//    var hint = 'Guess my number, 1-10!';
+//
+//    while (turns > 0) {
+//        var guess = prompt(hint +
+//          ' You have ' + turns + ' guesses left.');
+//        if (!guess) break;
+//        guess = Number(guess);
+//        if (guess == x) {
+//            document.write('<p>YOU WIN!</p>');
+//            turns = 0;
+//        } else {
+//            hint = 'Nope.';
+//            if (guess < x) hint += ' Too small!';
+//            if (guess > x) hint += ' Too big!';
+//            turns = turns - 1;
+//        }
+//    }
+//alert('The secret number was ' + x + '.');
+//
+//})();
 
 (function (){
     var x = Math.floor(Math.random() * 10) + 1;
