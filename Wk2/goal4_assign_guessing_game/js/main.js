@@ -35,7 +35,7 @@
 
 (function (){
     var x = Math.floor(Math.random() * 10) + 1;
-
+    var turns = 3;
     var dom = {
         input: document.querySelector("#input"),
         output: document.querySelector("#output"),
@@ -44,12 +44,27 @@
 
     var status;
 
-    var validateInput = function(){
-        playersGuess = parseInt(dom.input.value);
-
-        if(isNAN(playersGuess)){//check for proper data type
-
+    while (turns > 0){
+        var guess = (document.querySelector("output"));
+        if (!guess) break;
+        guess = Number(guess);
+        if (guess == x) {
+            document.querySelector("output").innerHTML("You win");
+            turns = 0;
+        } else {
+            document.querySelector("output").innerHTML("Guess Again");
+            if (guess < x) document.querySelector("output").innerHTML("Too Small!");
+            if (guess > x) document.querySelector("output").innerHTML("Too Big!");
+            turns = turns - 1;
         }
-    };
+    }
+//
+//    var validateInput = function(){
+//        playersGuess = parseInt(dom.input.value);
+//
+//        if(isNAN(playersGuess)){//check for proper data type
+//
+//        }
+//    };
 
 })();
