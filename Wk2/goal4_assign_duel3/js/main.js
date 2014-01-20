@@ -17,11 +17,12 @@
     //rounds
     var round=0;
 
-    function fight(){
+    //function fight(){
+    fight_btn.onclick = function fight(){
         //console.log("in the fight function");
 
 //        alert(player1[0]+":"+player1[2]+" *START* "+player2[0]+":"+player2[2]);
-        document.getElementById("#fight_box").innerHTML="start";
+        document.getElementById("fight_box");
 
         for (var i = 0; i < 10; i++){
 
@@ -51,13 +52,16 @@
             //console.log(player1[0]+": "+player1[2] + "  " + player2[0]+":"+player2[2]);
             console.log(player1.name+": "+player1.health + "  " + player2.name+":"+player2.health);
 
+
             var result = winnerCheck();
             console.log(result);
             if (result==="no winner"){
                 round++;
 //                alert(player1[0]+":"+player1[2]+"  *ROUND "+round+" OVER"+"*  "+player2[0]+":"+player2[2]);
+                document.getElementById("round_number").innerHTML=round;
             }else{
 //                alert(result);
+                document.getElementById("scores").innerHTML=result;
                 break;
             };
 
@@ -82,6 +86,7 @@
 
     //The program starts here
     //console.log('programs starts');
-    fight();
+    //fight();
 
 })();
+

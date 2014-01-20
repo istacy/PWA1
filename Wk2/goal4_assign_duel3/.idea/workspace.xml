@@ -35,7 +35,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="37" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.6369138" vertical-offset="719" max-vertical-offset="1380">
+            <state line="84" column="6" selection-start="2671" selection-end="2671" vertical-scroll-proportion="1.9139466" vertical-offset="0" max-vertical-offset="1500">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -60,7 +60,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="581" />
-    <option name="y" value="23" />
+    <option name="y" value="24" />
     <option name="width" value="859" />
     <option name="height" value="771" />
   </component>
@@ -181,7 +181,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="581" y="23" width="859" height="771" extended-state="1" />
+    <frame x="581" y="24" width="859" height="771" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -256,7 +256,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="37" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.6369138" vertical-offset="719" max-vertical-offset="1380">
+        <state line="84" column="6" selection-start="2671" selection-end="2671" vertical-scroll-proportion="1.9139466" vertical-offset="0" max-vertical-offset="1500">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
