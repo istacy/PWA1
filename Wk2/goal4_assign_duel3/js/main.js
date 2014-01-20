@@ -21,7 +21,7 @@
         //console.log("in the fight function");
 
 //        alert(player1[0]+":"+player1[2]+" *START* "+player2[0]+":"+player2[2]);
-
+        document.getElementById("#fight_box").innerHTML="start";
 
         for (var i = 0; i < 10; i++){
 
