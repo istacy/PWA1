@@ -110,3 +110,27 @@
 //    dom.input.value="";
 //}
 
+//Game variables
+
+//(function (){
+//    var randomNumber = Math.floor(Math.random() * 10) + 1;
+//    var turns = 3;
+//    var dom = {
+//        input: document.querySelector("#input"),
+//        output: document.querySelector("#output"),
+//        button: document.querySelector("button")
+//    };
+//
+//    while (turns > 0){
+//        var guess = "#input";
+//        if (guess == randomNumber){
+//            dom.output("You Win");
+//            turns = 0;
+//        }else{
+//            if (guess < randomNumber)dom.output += 'Too Small';
+//            if (guess > randomNumber)dom.output += 'Too High';
+//            turns = turns - 1;
+//
+//        }
+//    }
+//}();
