@@ -21,55 +21,33 @@
     fight_btn.onclick = function fight(){
         //console.log("in the fight function");
 
-//        alert(player1[0]+":"+player1[2]+" *START* "+player2[0]+":"+player2[2]);
         document.getElementById("fight_box");
 
-        //for (var i = 0; i < 10; i++){
 
-            //random formula is - Math.floor(Math.random() * (max - min) + min);
-
-            //var minDamage1 = player1[1] * .5;
-            //var minDamage2 = player2[1] * .5;
-            //var f1 = Math.floor(Math.random()*(player1[1]-minDamage1)+minDamage1);
-            //var f2 = Math.floor(Math.random()*(player2[1]-minDamage2)+minDamage2);
             var minDamage1 = player1.damage * .5;
             var minDamage2 = player2.damage * .5;
             var f1 = Math.floor(Math.random()*(player1.damage-minDamage1)+minDamage1);
             var f2 = Math.floor(Math.random()*(player2.damage-minDamage2)+minDamage2);
 
-            //console.log(f1);
-            //console.log(f2);
-
             //inflict damage
-            //player1[2]-=f1;
-            //player2[2]-=f2;
             player1.health-=f1;
             player2.health-=f2;
 
-            //console.log(playerOneHealth);
-            //console.log(playerTwoHealth);
-
-            //console.log(player1[0]+": "+player1[2] + "  " + player2[0]+":"+player2[2]);
             console.log(player1.name+": "+player1.health + "  " + player2.name+":"+player2.health);
 
             //output players health
-            document.getElementById("scores").innerHTML = player1.name+": " + player1.health;
-            document.getElementById("scores").innerHTML = player2.name+": " + player2.health;
+            document.getElementById("player1-health").innerHTML = player1.name+": " + player1.health;
+            document.getElementById("player2-health").innerHTML = player2.name+": " + player2.health;
 
             var result = winnerCheck();
             console.log(result);
             if (result==="no winner"){
                 round++;
-//                alert(player1[0]+":"+player1[2]+"  *ROUND "+round+" OVER"+"*  "+player2[0]+":"+player2[2]);
                 document.getElementById("round_number").innerHTML=round;
             }else{
-//                alert(result);
                 document.getElementById("scores").innerHTML=result;
-
-                //break;
-
                 // remove the fight button and display  "Game Over"
-                document.getElementByID("fight_btn").innerHTML="Game Over"
+                document.getElementByID("fight_btn").innerHTML="Game Over";
             };
 
         };
