@@ -24,7 +24,17 @@
         playersGuess = parseInt(dom.input.value);
 
         if(isNAN(playersGuess)){//check for proper data type
-
+        dom.output.innerHTML = "Please enter a valid number";
+        }else{
+            if(x < playersGuess){
+                dom.output.innerHTML = "You are too low";
+            }
+            if(x > playersGuess){
+                dom.output.innerHTML = "You are too high";
+            }
+            else{
+                dom.output.innerHTML = "Correct, You WIN";
+            }
         }
     };
 
