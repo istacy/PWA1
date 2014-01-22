@@ -47,8 +47,8 @@
             }else{
                 document.getElementById("scores").innerHTML=result;
                 // remove the fight button and display  "Game Over"
-                document.getElementByID("fight_btn").innerHTML="Game Over";
-            };
+                document.getElementById("fight_btn").innerHTML="Game Over";
+            }
 
         };
 
@@ -65,9 +65,9 @@
             result =player1.name +" WINS!!!"
         } else if (player2.health<1){
             result = player1.name+" WINS!!!"
-        };
+        }
         return result;
-    };
+    }
 
     //The program starts here
     //console.log('programs starts');
