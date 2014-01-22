@@ -17,6 +17,8 @@
         button: document.querySelector("button")
     };
 
+    console.log(x);
+
 
     var validateInput = function(){
         playersGuess = parseInt(dom.input.value);
