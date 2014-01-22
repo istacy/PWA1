@@ -24,7 +24,7 @@
 //        alert(player1[0]+":"+player1[2]+" *START* "+player2[0]+":"+player2[2]);
         document.getElementById("fight_box");
 
-        for (var i = 0; i < 10; i++){
+        //for (var i = 0; i < 10; i++){
 
             //random formula is - Math.floor(Math.random() * (max - min) + min);
 
@@ -52,6 +52,9 @@
             //console.log(player1[0]+": "+player1[2] + "  " + player2[0]+":"+player2[2]);
             console.log(player1.name+": "+player1.health + "  " + player2.name+":"+player2.health);
 
+            //output players health
+            document.getElementById("scores").innerHTML = player1.name+": " + player1.health;
+            document.getElementById("scores").innerHTML = player2.name+": " + player2.health;
 
             var result = winnerCheck();
             console.log(result);
@@ -62,11 +65,15 @@
             }else{
 //                alert(result);
                 document.getElementById("scores").innerHTML=result;
-                break;
+
+                //break;
+
+                // remove the fight button and display  "Game Over"
+                document.getElementByID("fight_btn").innerHTML="Game Over"
             };
 
         };
-    };
+
 
     function winnerCheck(){
 
