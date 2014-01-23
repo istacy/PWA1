@@ -10,18 +10,14 @@
 //Game variables
 (function (){
     var x = Math.floor(Math.random() * 10) + 1;
+    console.log('The random number is ' + x);
     var guesses = 0;
     var tries = 3;
-    var gameover = false;
     var dom = {
         input: document.querySelector("#input"),
         output: document.querySelector("#output"),
         button: document.querySelector("button")
     };
-
-    console.log('The random number is ' + x);
-    //dom.output.innerHTML = x;
-
 
     // the validate function, referenced from the makeGuess() function
     function isInteger(value) {
@@ -30,7 +26,7 @@
             if(value > 0 && value <= 10){
                 return true;
             }
-        }
+        };
         return false;
     }
 
@@ -51,10 +47,7 @@
         var playersGuess = dom.input.value;
 
         if(guesses == tries)
-            gameover = true;
-
-        if(gameover)
-            return false; // return false with keypress when guesses are reached or game is over.
+            return false; // return false with keypress when guesses are reached.
 
         // pass the playersGuess to isInteger() function in the IF statement. Returns boolean (true/false).
         if(isInteger(playersGuess)){
@@ -78,7 +71,6 @@
                 dom.output.innerHTML = "Correct, You WIN";
                 // remove listener
                 dom.button.removeEventListener('click',listener,false);
-                gameover = true;
             }
         } else {
             console.log('The input is not a valid integer between 1 and 10.');
@@ -98,5 +90,3 @@
     dom.input.addEventListener('keypress', keypressListener);
 
 })();
-
-
