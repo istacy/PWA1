@@ -12,13 +12,14 @@
     var x = Math.floor(Math.random() * 10) + 1;
     var guesses = 0;
     var tries = 3;
+    var gameover = false;
     var dom = {
         input: document.querySelector("#input"),
         output: document.querySelector("#output"),
         button: document.querySelector("button")
     };
 
-    console.log('The random number is' + x);
+    console.log('The random number is ' + x);
     //dom.output.innerHTML = x;
 
 
