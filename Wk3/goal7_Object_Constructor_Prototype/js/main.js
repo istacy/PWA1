@@ -82,10 +82,11 @@ var Blog = function(str, date){
 
       var blogHTML = "";
 
-      bloghHTML += highlight ? "<p style='background-color:#EEEEEE '>" : "<p>";
+      blogHTML += highlight ? "<p style='background-color:#EEEEEE '>" : "<p>";
 
-      blogText += "<strong>" + (blog[i].date.getMonth() + 1) + "/" + blog[i].date.getDate() + "/" + blog[i].date.getFullYear() + "</strong><br />" + blog[i].body + "</p>";
+      blogHTML += "<strong>" + (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear() + "</strong><br />" + this.body + "</p>";
 
+        return blogHTML;
     };
 
 //    if(i % 2 === 0){
@@ -99,7 +100,7 @@ var Blog = function(str, date){
     //blogText += "<strong>" + blog[i].date + "</strong><br />" + blog[i].body + "</p>";
 
     i++;
-    };
+   };
 
     // array of blog items
     // each blog item will use the Blog constructor as its template to create each
@@ -132,8 +133,9 @@ var Blog = function(str, date){
 //
 //            //blogText += "<strong>" + blog[i].date + "</strong><br />" + blog[i].body + "</p>";
 //
-//            i++;
 
+       blogText += blog[i].toHTML(i % 2 === 0);
+       i++;
 
         }
 
@@ -147,4 +149,4 @@ var Blog = function(str, date){
 
 
 
-})();  // end wrapper
+}();  // end wrapper
