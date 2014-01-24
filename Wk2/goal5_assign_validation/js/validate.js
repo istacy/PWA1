@@ -14,47 +14,66 @@
 // password (id = f_password) -->  [a-zA-Z]\w{3,14}$
 
 (function(){
-
+    var goodForm = false;
     myform.onsubmit = function(e){
 
         //Below is one example of the validateField call with an argument.
         //You must dynamically retrieve the ID name from the DOM/HTML.
+        //validateField(id);  //id = is the form input field ID
 
-        validateField(id);  //id = is the form input field ID
-
-
-        e.preventDefault();
-        return false;
+        // clear the console for easier reading.
+        console.clear();
+        // get nodeList of inputs (an object like an array with our form elements)
+        var formFields = myform.getElementsByTagName('input');
+        // loop nodeList of inputs
+        for (var i=0;i<formFields.length;i++){
+            // ignore the input with id of f_submit (the submit button)
+            if(formFields[i].id != 'f_submit'){
+                // validate input, returns boolean (true/false) if all validation passes
+                goodForm = validateField(formFields[i]);
+            }
+        }
+        // if validation failed, don't submit the form.
+        if(!goodForm){
+            e.preventDefault();
+            return false;
+        }
     };
 
-
     var validateField = function(inputName){
-
         if (inputName.name === 'f_username'){
-            var pattern = '^([A-Z]+[a-zA-Z]*)(\s|\-)?([A-Z]+[a-zA-Z]*)?(\s|\-)?([A-Z]+[a-zA-Z]*)?$';
-
-            //You will need to create an else-if statement for each input field id.  The
-            //      format will be similar to the above IF statement.
-
-
+            var pass = /^([A-Z]+[a-zA-Z]*)(\s|\-)?([A-Z]+[a-zA-Z]*)?(\s|\-)?([A-Z]+[a-zA-Z]*)?$/;
+        }
+        else if (inputName.name === 'f_email'){
+            var pass = /^[\w\.\-]+@([\w\-]+\.)+[a-zA-Z]+$/;
+        }
+        else if (inputName.name === 'f_phone'){
+            var pass = /^\(?\d{3}?\)?\s?\-?\d{3}?\-?\d{4}?$/;
+        }
+        else if (inputName.name === 'f_ssn'){
+            var pass = /^\d{3}-\d{2}-\d{4}$/;
+        }
+        else if (inputName.name === 'f_password'){
+            var pass = /[a-zA-Z]\w{3,14}$/;
         }
 
-        var pass = '^[a-zA-Z]\w{3,14}$';
-        var errorMsg = inputName.nextSibling.nextSibling.nextSibling.nextSibling;
-
-        if (!pass || inputName.value.length < 2){
-            errorMsg.style.display='block';
-            inputName.style.backgroundColor = 'red';
-        } else if (pass && inputName.value.length > 5){
+        var errorMsg = document.getElementById(inputName.name+"_error");
+        // match the regular expression for valid input
+        if (inputName.value.match(pass)) {
+            console.log(inputName.name + " = '" + inputName.value + "' (GOOD)");
             errorMsg.style.display='none';
             inputName.style.backgroundColor = 'green';
+            return true;
         } else {
-            errorMsg.style.display='none';
-            inputName.style.backgroundColor = 'white';
+            console.log(inputName.name + " = '" + inputName.value + "' (BAD)");
+            errorMsg.style.display='block';
+            inputName.style.backgroundColor = 'red';
+            return false;
         }
     };
 
 })();  // end wrapper
+
 
 
 
