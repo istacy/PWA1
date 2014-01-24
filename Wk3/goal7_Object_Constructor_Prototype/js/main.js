@@ -70,7 +70,7 @@ var button = document.getElementById('blog_btn');
 var Blog = function(str, date){
     //var LOL = "funny";
 
-//console.log(this);
+    //console.log(this);
 
     this.body = str;
     this.date = date;
@@ -78,22 +78,42 @@ var Blog = function(str, date){
 //console.log(" 'str' is equal to:", str);
 //console.log(" 'this.body' is equal to:", this.body);
 
-    this.toHTML = function(highlight){
+//  this.toHTML = function(highlight){
+//
+//  var blogHTML = "";
+//
+//  blogHTML += highlight ? "<p style='background-color:#EEEEEE '>" : "<p>";
+//
+//  blogHTML += "<strong>" + (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear() + "</strong><br />" + this.body + "</p>";
+//
+//    return blogHTML;
+//    };
 
-      var blogHTML = "";
+//  this.toString = function(){
+//
+//  console.log("[" + (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear() + "] " + this.body);
+//   };
+};
+    Blog.prototype.companyName = "Full Sail";
 
-      blogHTML += highlight ? "<p style='background-color:#EEEEEE '>" : "<p>";
+    Blog.prototype.toHTML = function(highlight){
+//        this.toHTML = function(){
+            var blogHTML = "";
+            blogHTML += highlight ? "<p style='background-color:#EEEEEE '>" : "<p>";
 
-      blogHTML += "<strong>" + (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear() + "</strong><br />" + this.body + "</p>";
+            blogHTML += "<strong>" + (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear() + "</strong><br />" + this.body + "</p>";
 
-        return blogHTML;
-    };
+            return blogHTML;
+        };
 
-    this.toString = function(){
 
-        console.log("[" + (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear() + "] " + this.body);
+    Blog.prototype.toString = function(){
+//        this.toString = function(){
 
-    };
+            console.log("[" + (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear() + "] " + this.body);
+        };
+
+
 
 //    if(i % 2 === 0){
 //        blogText += "<p style='background-color:#EEEEEE '>";//gray background for every other
@@ -106,7 +126,7 @@ var Blog = function(str, date){
     //blogText += "<strong>" + blog[i].date + "</strong><br />" + blog[i].body + "</p>";
 
 //    i++;
-   };
+//};
 
     // array of blog items
     // each blog item will use the Blog constructor as its template to create each
@@ -146,7 +166,13 @@ var Blog = function(str, date){
 
        i++;
 
-        }
+        };
+
+        //var tmpName = blog[0].companyName = "Full Sail";
+        console.log(blog[0].companyName);
+        console.log(blog[1].companyName);
+        console.log(blog[2].companyName);
+        console.log(blog[3].companyName);
 
     document.getElementById("blog").innerHTML = blogText;
         e.preventDefault();

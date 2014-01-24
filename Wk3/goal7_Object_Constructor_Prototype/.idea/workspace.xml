@@ -35,19 +35,20 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="22" selection-start="3938" selection-end="3938" vertical-scroll-proportion="0.5414847" vertical-offset="288" max-vertical-offset="1635">
+            <state line="105" column="28" selection-start="4509" selection-end="4509" vertical-scroll-proportion="0.32751092" vertical-offset="675" max-vertical-offset="2100">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#151#1254#0" expanded="false" />
                 <element signature="e#1347#2436#0" expanded="false" />
                 <element signature="e#2438#3319#0" expanded="false" />
-                <element signature="e#4059#4081#0" expanded="false" />
-                <element signature="e#4514#4536#0" expanded="false" />
-                <element signature="e#4642#4722#0" expanded="false" />
-                <element signature="e#5447#5506#0" expanded="false" />
-                <marker date="1390601235000" expanded="true" signature="3650:3675" placeholder="..." />
-                <marker date="1390601235000" expanded="true" signature="4115:4140" placeholder="..." />
-                <marker date="1390601235000" expanded="true" signature="5577:5602" placeholder="..." />
+                <element signature="e#4756#4778#0" expanded="false" />
+                <element signature="e#5210#5232#0" expanded="false" />
+                <element signature="e#5338#5418#0" expanded="false" />
+                <element signature="e#6143#6202#0" expanded="false" />
+                <marker date="1390603443000" expanded="true" signature="3654:3679" placeholder="..." />
+                <marker date="1390603443000" expanded="true" signature="4275:4300" placeholder="..." />
+                <marker date="1390603443000" expanded="true" signature="4812:4837" placeholder="..." />
+                <marker date="1390603443000" expanded="true" signature="6273:6298" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -138,6 +139,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../goal7_assign_obj_to_prototypes" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -229,19 +231,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="22" selection-start="3938" selection-end="3938" vertical-scroll-proportion="0.5414847" vertical-offset="288" max-vertical-offset="1635">
+        <state line="105" column="28" selection-start="4509" selection-end="4509" vertical-scroll-proportion="0.32751092" vertical-offset="675" max-vertical-offset="2100">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#151#1254#0" expanded="false" />
             <element signature="e#1347#2436#0" expanded="false" />
             <element signature="e#2438#3319#0" expanded="false" />
-            <element signature="e#4059#4081#0" expanded="false" />
-            <element signature="e#4514#4536#0" expanded="false" />
-            <element signature="e#4642#4722#0" expanded="false" />
-            <element signature="e#5447#5506#0" expanded="false" />
-            <marker date="1390601235000" expanded="true" signature="3650:3675" placeholder="..." />
-            <marker date="1390601235000" expanded="true" signature="4115:4140" placeholder="..." />
-            <marker date="1390601235000" expanded="true" signature="5577:5602" placeholder="..." />
+            <element signature="e#4756#4778#0" expanded="false" />
+            <element signature="e#5210#5232#0" expanded="false" />
+            <element signature="e#5338#5418#0" expanded="false" />
+            <element signature="e#6143#6202#0" expanded="false" />
+            <marker date="1390603443000" expanded="true" signature="3654:3679" placeholder="..." />
+            <marker date="1390603443000" expanded="true" signature="4275:4300" placeholder="..." />
+            <marker date="1390603443000" expanded="true" signature="4812:4837" placeholder="..." />
+            <marker date="1390603443000" expanded="true" signature="6273:6298" placeholder="..." />
           </folding>
         </state>
       </provider>
