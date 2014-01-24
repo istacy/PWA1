@@ -35,7 +35,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="75" selection-start="3208" selection-end="3208" vertical-scroll-proportion="0.95633185" vertical-offset="888" max-vertical-offset="1650">
+            <state line="110" column="40" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.65065503" vertical-offset="1368" max-vertical-offset="2055">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -59,9 +59,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="770" />
+    <option name="x" value="745" />
     <option name="y" value="24" />
-    <option name="width" value="670" />
+    <option name="width" value="695" />
     <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -180,14 +180,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="770" y="24" width="670" height="784" extended-state="0" />
+    <frame x="745" y="24" width="695" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16716418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16115108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -253,7 +253,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="75" selection-start="3208" selection-end="3208" vertical-scroll-proportion="0.95633185" vertical-offset="888" max-vertical-offset="1650">
+        <state line="110" column="40" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.65065503" vertical-offset="1368" max-vertical-offset="2055">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
