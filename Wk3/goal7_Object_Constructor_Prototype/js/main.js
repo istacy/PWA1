@@ -69,7 +69,13 @@ var button = document.getElementById('blog_btn');
  */
 var Blog = function(str, date){
 
+    console.log(this);
 
+    this.body = str;
+    this.date = date;
+
+    console.log(" 'str' is equal to:", str);
+    console.log(" 'this.body' is equal to:", this.body);
     };
 
     // array of blog items
