@@ -26,19 +26,26 @@ function addStudent(name,address,city,state,gpa){
         if(isGPA([i])){
             console.log(gpa[i] + ' is a valid GPA.');
             //format the GPA
-            gpas[i] = formatGPA[i]));
+            gpas[i] = formatGPA[i]);
             console.log('Format GPA: ' + gpas[i]);
         }
-    };
+    }
 
     //create student object
     var student = {name: name, address:{address: address, city: city, state: state}, gpa: gpas};
     //adds the student object to the students array
     students.push(student);
-};
+}
 
 //Function to check for valid GPA
 function isGPA(n){
     var gpa = parseFloat(n);
     //if GPA is flaot and between 0-4
+    if(!isNaN(gpa) && gpa >= 0 && gpa <= 4){
+        //get 2 decimal places
+        gpa=gpa.toFixed(2);
+        return true;
+    }
+    return false;
 }
+
