@@ -71,3 +71,17 @@ function getTodaysDate(){
     return d.getMonth()+1 + '/' + d.getDate() + '/' + d.getFullYear();
 }
 
+//function to display students in console
+function displayConsole(){
+    console.log('********** Begin: Output Students **********');
+    for (var i=0;i<students.length;i++){
+        console.log('Name: ' + students[i].name);
+        console.log('Address: ' + students[i].address.address + ', ' + students[i].address.city + ', ' + students[i].address.state);
+        console.log('GPA: ' + students[i].gpa.join(","));
+        console.log('Date: ' + getTodaysDate());
+        console.log('-------------------');
+    }
+    console.log('******** END: OUTPUT STUDENTS ********');
+    }
+
+//function to display student info, accepts integer (index of students array)
