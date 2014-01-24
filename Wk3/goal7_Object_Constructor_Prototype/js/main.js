@@ -85,12 +85,42 @@ var Blog = function(str, date){
     // manually create an object using the Blog constructor to establish the objects
     //      structure and display all the information in the body of the HTML
 
-        var blog = [
-            new Blog('Learned about functions, and how to pass parameters into them.', '04/2/2013'),
-            new Blog('Learned about objects, and how to set keys and get values.', '04/15/2013'),
-            new Blog('I love reading regular expressions.  I normally read a few lines right before falling asleep.  It is really good sleeping material.', '04/18/2013'),
-            new Blog('What\'s all this new object stuff (i.e THIS, prototype, etc...)', '08/21/2008')
-        ];
+    var blog = [
+        new Blog('Learned about functions, and how to pass parameters into them.', new Date('04/2/2013')),
+        new Blog('Learned about objects, and how to set keys and get values.', new Date('04/15/2013')),
+        new Blog('I love reading regular expressions.  I normally read a few lines right before falling asleep.  It is really good sleeping material.', new Date('04/18/2013')),
+        new Blog('What\'s all this new object stuff (i.e THIS, prototype, etc...)', new Date('08/21/2008'))
+    ];
+
+    var showBlog = function(e){
+
+        var i = 0,
+            blogText = "";
+
+        while(i < blog.length){
+            //if i / 2 and the remainder is equal to 0 apply that style
+            if(i%2 === 0){
+                blogText += "<p style='background-color:#EEEEEE '>";//gray background for every other
+            }else{
+                blogText += "<p>";
+            }
+
+            blogText += "<strong>" + (blog[i].date.getMonth() + 1) + "/" + blog[i].date.getDate() + "/" + blog[i].date.getFullYear() + "</strong><br />" + blog[i].body + "</p>";
+
+            //blogText += "<strong>" + blog[i].date + "</strong><br />" + blog[i].body + "</p>";
+
+            i++;
+
+
+        }
+
+    document.getElementById("blog").innerHTML = blogText;
+        e.preventDefault();
+        return false;
+
+     };
+
+    button.onclick = showBlog;
 
 
 
