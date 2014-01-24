@@ -85,3 +85,10 @@ function displayConsole(){
     }
 
 //function to display student info, accepts integer (index of students array)
+function displayRecord(i){
+    document.getElementById('name').innerHTML = students[i].name;
+    document.getElementById('address').innerHTML = students[i].address.address + ', ' + students[i].address.city + ', ' + students[i].address.state;
+    document.getElementById('gpa').innerHTML = students[i].gpa.join(", ");
+    document.getElementById('date').innerHTML = getTodaysDate();
+    document.getElementById('average').innerHTML = avgGPA(students[i].gpa);
+}
