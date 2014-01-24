@@ -49,3 +49,7 @@ function isGPA(n){
     return false;
 }
 
+//function to format gpa 2 decimals
+function formatGPA(n){
+   return parseFloat(n).toFixed(2);
+}
