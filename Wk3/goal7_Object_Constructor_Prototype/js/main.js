@@ -89,6 +89,12 @@ var Blog = function(str, date){
         return blogHTML;
     };
 
+    this.toString = function(){
+
+        console.log("[" + (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear() + "] " + this.body);
+
+    };
+
 //    if(i % 2 === 0){
 //        blogText += "<p style='background-color:#EEEEEE '>";//gray background for every other
 //    }else{
@@ -135,6 +141,9 @@ var Blog = function(str, date){
 //
 
        blogText += blog[i].toHTML(i % 2 === 0);
+
+            blog[i].toString();
+
        i++;
 
         }
