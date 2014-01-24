@@ -53,3 +53,21 @@ function isGPA(n){
 function formatGPA(n){
    return parseFloat(n).toFixed(2);
 }
+
+//function to get the average gpa, accepts array of GPAs
+function avgGPA(gpa){
+    var total = 0;
+    //loop GPA and add to total
+    for (var i=0;i<gpa.length;i++){
+        total += +gpa[i];
+    }
+    //return and format average gpa
+    return formatGPA(total / gpa.length);
+}
+
+//function to get date
+function getTodaysDate(){
+    var d = new Date();
+    return d.getMonth()+1 + '/' + d.getDate() + '/' + d.getFullYear();
+}
+
