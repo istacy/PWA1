@@ -99,7 +99,7 @@ var Blog = function(str, date){
 
     //blogText += "<strong>" + blog[i].date + "</strong><br />" + blog[i].body + "</p>";
 
-    i++;
+//    i++;
    };
 
     // array of blog items
@@ -149,4 +149,4 @@ var Blog = function(str, date){
 
 
 
-}();  // end wrapper
+}());  // end wrapper
