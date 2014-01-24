@@ -68,14 +68,37 @@ var button = document.getElementById('blog_btn');
  -----------------------------------------------------------------------
  */
 var Blog = function(str, date){
+    //var LOL = "funny";
 
-    console.log(this);
+//console.log(this);
 
     this.body = str;
     this.date = date;
 
-    console.log(" 'str' is equal to:", str);
-    console.log(" 'this.body' is equal to:", this.body);
+//console.log(" 'str' is equal to:", str);
+//console.log(" 'this.body' is equal to:", this.body);
+
+    this.toHTML = function(highlight){
+
+      var blogHTML = "";
+
+      bloghHTML += highlight ? "<p style='background-color:#EEEEEE '>" : "<p>";
+
+      blogText += "<strong>" + (blog[i].date.getMonth() + 1) + "/" + blog[i].date.getDate() + "/" + blog[i].date.getFullYear() + "</strong><br />" + blog[i].body + "</p>";
+
+    };
+
+//    if(i % 2 === 0){
+//        blogText += "<p style='background-color:#EEEEEE '>";//gray background for every other
+//    }else{
+//        blogText += "<p>";
+//    }
+
+    //blogText += "<strong>" + (blog[i].date.getMonth() + 1) + "/" + blog[i].date.getDate() + "/" + blog[i].date.getFullYear() + "</strong><br />" + blog[i].body + "</p>";
+
+    //blogText += "<strong>" + blog[i].date + "</strong><br />" + blog[i].body + "</p>";
+
+    i++;
     };
 
     // array of blog items
@@ -99,17 +122,17 @@ var Blog = function(str, date){
 
         while(i < blog.length){
             //if i / 2 and the remainder is equal to 0 apply that style
-            if(i%2 === 0){
-                blogText += "<p style='background-color:#EEEEEE '>";//gray background for every other
-            }else{
-                blogText += "<p>";
-            }
-
-            blogText += "<strong>" + (blog[i].date.getMonth() + 1) + "/" + blog[i].date.getDate() + "/" + blog[i].date.getFullYear() + "</strong><br />" + blog[i].body + "</p>";
-
-            //blogText += "<strong>" + blog[i].date + "</strong><br />" + blog[i].body + "</p>";
-
-            i++;
+//            if(i%2 === 0){
+//                blogText += "<p style='background-color:#EEEEEE '>";//gray background for every other
+//            }else{
+//                blogText += "<p>";
+//            }
+//
+//            blogText += "<strong>" + (blog[i].date.getMonth() + 1) + "/" + blog[i].date.getDate() + "/" + blog[i].date.getFullYear() + "</strong><br />" + blog[i].body + "</p>";
+//
+//            //blogText += "<strong>" + blog[i].date + "</strong><br />" + blog[i].body + "</p>";
+//
+//            i++;
 
 
         }
