@@ -31,3 +31,14 @@ function addStudent(name,address,city,state,gpa){
         }
     };
 
+    //create student object
+    var student = {name: name, address:{address: address, city: city, state: state}, gpa: gpas};
+    //adds the student object to the students array
+    students.push(student);
+};
+
+//Function to check for valid GPA
+function isGPA(n){
+    var gpa = parseFloat(n);
+    //if GPA is flaot and between 0-4
+}
