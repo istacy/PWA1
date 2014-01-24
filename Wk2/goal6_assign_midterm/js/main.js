@@ -26,7 +26,7 @@ function addStudent(name,address,city,state,gpa){
         if(isGPA([i])){
             console.log(gpa[i] + ' is a valid GPA.');
             //format the GPA
-            gpas[i] = formatGPA[i]);
+            gpas[i] = formatGPA(gpa[i]);
             console.log('Format GPA: ' + gpas[i]);
         }
     }
