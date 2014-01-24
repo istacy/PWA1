@@ -1,5 +1,6 @@
 /**
- * Created by the JavaScript Development Team
+ * Stacy Faude
+ * 1-24-14
  * Class: PWA
  * Goal: Goal7
  */
