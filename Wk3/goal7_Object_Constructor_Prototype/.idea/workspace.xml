@@ -35,7 +35,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="16" selection-start="5332" selection-end="5332" vertical-scroll-proportion="1.8777293" vertical-offset="0" max-vertical-offset="2100">
+            <state line="132" column="16" selection-start="5332" selection-end="5332" vertical-scroll-proportion="1.3973799" vertical-offset="330" max-vertical-offset="2100">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#151#1254#0" expanded="false" />
@@ -139,7 +139,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../goal7_assign_obj_to_prototypes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../goal9_canvas" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -231,7 +231,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="16" selection-start="5332" selection-end="5332" vertical-scroll-proportion="1.8777293" vertical-offset="0" max-vertical-offset="2100">
+        <state line="132" column="16" selection-start="5332" selection-end="5332" vertical-scroll-proportion="1.3973799" vertical-offset="330" max-vertical-offset="2100">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#151#1254#0" expanded="false" />
