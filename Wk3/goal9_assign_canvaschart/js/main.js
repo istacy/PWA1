@@ -1,5 +1,5 @@
 /**
- * Created by:
+ * Created by: Stacy Faude
  * Class: PWA1
  * Goal: Goal9
  */
@@ -32,29 +32,38 @@ console.log("start canvas");
 //***********************************************
 
     //Step 3.a. Create a new image container in a variable named “img”.
-    var img = new Image();
+    //var img = new Image();
+    var img = document.createElement('img');
 
     //Step 3.b. Set the .src for the "img" variable to “images/bg.jpg”.
     img.src = "images/bg.jpg";
 
     //Step 3.c. Create the image and wait for it to load before instantiating "drawImage".
+
     //Step 3.c.i Create the “new Image()”.
     //Step 3.c.ii. Instantiate the "drawImage" with the parameters of (img, 0, 0, “put the canvas width here”, “put the canvas height here”).
     //Step 3.c.iii. Call a function named “drawBars”, which will draw the bars (or rectangles) on the “images/bg.jpg” image using the parameters stored in the variable “chartData”, which was created above.
 
-    img.addEventListener('drawBars',function(){
-       ctx.drawImage(img, 0, 0, 400, 400);
+//    img.addEventListener('drawBars',function(){
+//       ctx.drawImage(img, 0, 0, 400, 400);
+//
+//    }, false);
 
-    }, false);
+    img.onload =  function(){
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        drawBars();
+    };
 
 //***********************************************
 
     //Step 4 Function “drawBars”
+    function drawBars(){
+
     //Step 4.a. Set the font that will be used for the numbers that will be placed on top of each bar to “14px Georgia”.
     ctx.font = "14px Georgia";
 
     //Step 4.b. Create a FOR loop which will loop through each number in the “chartData” array and draw a rectangle on the “images/bg.jpg” created above.
-    for(var i=0; i<chartData; i++){
+    for(var i=0; i<chartData.length; i++){
 
         //Step 4.b.i. Use the .beginPath to start the draw of each bar.
         ctx.beginPath();
@@ -66,7 +75,7 @@ console.log("start canvas");
         var height = maxBarHeight*chartData[i]/100;
 
         //Step 4.b.iv. Position and draw each bar correctly by using the .rect method. In the .rect method you will want to use the following parameters “(i*80+90, 270-height, 50, height)”.
-        ctx.rect(i*80+90, 270,50);
+        ctx.rect(i*80+90, 270-height,50,height);
 
         //Step 4.b.v. Call the .fill method to fill in the bars with the .fillStyle defined in “ii” (above).
         ctx.fill();
@@ -75,14 +84,16 @@ console.log("start canvas");
         ctx.fillStyle = "rgb(255, 255, 255)";
 
         //Step 4.b.vii. Call the .fillText method to write out the numbers above the bars using the .fillStyle defined in “vii.” (directly above).
-        ctx.fill();
+        ctx.fillText(chartData[i], i*80+90, 260-height);
     }
 
         //Step 4.c. Create a call to a function named “drawChartText();” (located directly below). This function will be used to write any text that the bar chart needs.
-
+        drawChartText();
+    }
 //***********************************************
 
         //Step 5. Function “drawChartText”
+    function drawChartText(){
         //Step 5.a.Write a title in the upper left of the bar chart.
         //Step 5.a.i. Set the font that will be used for the header to “20px Georgia”.
         ctx.font = '20px Georgia';
@@ -106,6 +117,7 @@ console.log("start canvas");
         //Step 5.b.iv. Create a FOR loop to loop through the “xAxisData” array, and use the .fillText to display the text under each bar. The .fillText parameters should be “(xAxisData[i],i*80+95, 290)”
         for (var i=0; i<0; i++){
             ctx.fillText(xAxisData[i],i*80+95, 290);
+        }
     }
 
 
