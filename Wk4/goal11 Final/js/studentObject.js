@@ -8,7 +8,7 @@
 // constructor function creates a new student object
 function student(name, address, city, state, gpa, date)
 {
-    var fulladdress = {address:address,city:city,state:state,state:state};
+    var fulladdress = {address:address,city:city,state:state};
     this.name = name;
     this.address = fulladdress;
 
@@ -19,7 +19,7 @@ function student(name, address, city, state, gpa, date)
             // format the GPA
             gpas[i] = formatGPA(gpa[i]);
         }
-    }
+    };
     this.gpa = gpas;
     this.date = date;
     // add student to students array
@@ -29,3 +29,4 @@ function student(name, address, city, state, gpa, date)
 student.prototype.getAvgGpa = function() {
     return avgGPA(this.gpa);
 };
+
